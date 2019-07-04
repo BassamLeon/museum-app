@@ -15,26 +15,28 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="My test image">
       
        </section> 
-       <p>Comments</p>
-      <p>Arien said:</p>
-      <p>"This is definitely one of my favorites"</p>
-      <form>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="user_name">
-        </div>
-        <div>
-          <label for="message">Message:</label>
-          <input type="message" id="message" name="user_message">
-        </div>
-        <button>
-          Post your comment
-        </button>
-      </form>
-      <form onsubmit="submitComment();return false">
-        </form>
+       <section id='comments'>
+          <h2>Comments</h2>
       
- 
+          <section class='comment'>
+            <h3>Arien said:</h3>
+            <p>"This is definitely one of my favorites!"</p>
+          </section>
+        </section>
+      
+        <form onsubmit="submitComment(event); return false">
+          <div class="formSection">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div class="formSection">
+            <label for="msg">Message:</label>
+            <textarea id="msg"></textarea>
+          </div>
+          <div class="button">
+            <button type="default">Post your comment</button>
+          </div>
+        </form>
  </main>   
 <footer>
     <p>Made with love at Codaisseur</p>
