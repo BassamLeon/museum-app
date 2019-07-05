@@ -5,7 +5,7 @@ function doesNotPassAllValidations(name, msg) {
     return true;
   }
 
-  if(msg.length > 2) {
+  if(msg.length > 280) {
     alert('Your comment is too long')
     return true
   }

@@ -326,15 +326,19 @@ const data = {
   
 const paintings = data.artObjects
 for(let i = 0; i < paintings.length; i++){
-    // gather Data
+    
     const paintings = paintings[i]
     const gallery = document.getElementById('gallery')
-const link = "./pages/detail-page.html"
-   // creat elements
+    const link = "./pages/detail-page.html"
+
+   
    const img = document.createElement('img')
-   //adjust elements
+   const a = document.createElement('a')
+   
    img.alt = painting.title
    img.src = painting.webImage.url
-   // display elements
-   gallery.appendChild(img)
+   a.herf = link
+   
+   a.appendChild(img)
+   gallery.appendChild(a)
 }
